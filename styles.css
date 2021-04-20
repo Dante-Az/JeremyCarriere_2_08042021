@@ -1,0 +1,60 @@
+.container {
+    margin: auto;
+    width:95%;
+}
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+div {
+    display: block;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+:root {
+    --bluecolor: #0065FC;
+    --greycolor: #F2F2F2;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+.logo {
+    margin: 25px auto 0 35px;
+}
+nav {
+    display: block;
+}
+nav ul {
+    display: flex;
+    padding: 0;
+    height: 100%;
+    list-style-type: none;
+}
+ul {
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+li {
+    display: list-item;
+    text-align:-webkit-match-parent;
+}
+header a {
+    display: block;
+    padding: 0 25px;
+    padding-top: 40px;
+    font-size: .9rem;
+    color: #000;
+    text-decoration: none;
+    transition: color .2s;
+}
+ .signin a{
+    margin-right: 10px;
+    font-weight: bold;
+    color: #0065FC;
+}
