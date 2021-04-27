@@ -1,0 +1,47 @@
+/*Définition des propriétés de base (Variables de couleurs,comportement des bordures,police*/
+:root {
+    --color1: #0065FC;
+    --color2: #F2F2F2;
+}
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+/*Mise en page*/
+.main {
+    margin:auto;
+    width:95%
+}
+header {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header a {
+    text-decoration: none; /*Pour que les liens ne soient plus "souligné"*/
+    padding: 0 25px;
+    padding-top: 40px;
+    color:black;
+}
+.logo {
+    margin:25px auto 0 35px;
+}
+.menu ul {
+    list-style-type: none; /*Pour retirer les puces des listes*/
+    
+}
+.nav-item {
+    display: inline-block;
+    padding:45px 25px;
+    
+}
+.signin a{
+    font-weight: bold;
+    color:var(--color1);
+}
