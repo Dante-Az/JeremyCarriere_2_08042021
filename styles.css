@@ -2,6 +2,7 @@
 :root {
     --color1: #0065FC;
     --color2: #F2F2F2;
+    --color3: #DEEBFF;
 }
 * {
     box-sizing: border-box;
@@ -25,12 +26,11 @@ header {
 }
 header a {
     text-decoration: none; /*Pour que les liens ne soient plus "souligné"*/
-    padding: 0 25px;
-    padding-top: 40px;
+    padding: 40px 25px 0;
     color:black;
 }
 .logo {
-    margin:25px auto 0 35px;
+    margin:25px auto 0px 0px;
 }
 .menu ul {
     list-style-type: none; /*Pour retirer les puces des listes*/
@@ -44,4 +44,44 @@ header a {
 .signin a{
     font-weight: bold;
     color:var(--color1);
+}
+.banner p {
+    padding: 10px 0;
+}
+/*Propriétés de la barre de recherche*/
+#searchsection {
+    margin: 10px 0;
+}
+.locationsearch {
+    display: flex;
+    align-items: center;
+    width: 405px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.locationsearch i {
+    background-color:var(--color2);
+    padding: 16px;
+}
+#sitesearch {
+    border: 2px solid var(--color2);
+    height: 48px;
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: 100%;
+    width: 235px;
+}
+.searchbutton {
+    background-color: var(--color1);
+    padding: 14px;
+    font-weight: bold;
+    font-size: 18px;
+    border: unset;
+    height: 48px;
+}
+.searchbutton span {
+    color: white;
+}
+.searchicon {/*Cacher l'icône en mode desktop*/
+    display: none;
 }
