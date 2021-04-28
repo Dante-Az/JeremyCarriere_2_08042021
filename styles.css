@@ -125,3 +125,17 @@ header a {
     padding-left: 15px;
     padding-right: 15px;
 }
+.info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.info i {
+    color: var(--color1);
+    border: 2px solid var(--color2);
+    border-radius: 25px;
+    padding: 8px 13px;
+}
+.info p {
+    margin: 10px;
+}
