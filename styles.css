@@ -78,10 +78,50 @@ header a {
     font-size: 18px;
     border: unset;
     height: 48px;
+    cursor: pointer;
 }
 .searchbutton span {
     color: white;
 }
 .searchicon {/*Cacher l'icône en mode desktop*/
     display: none;
+}
+/*Mise en forme des filtres*/
+#filtersection {
+    display: flex;
+    align-items: center;
+}
+#filtersection h4 {
+    margin-right: 10px;
+}
+.filterbutton {
+    display: flex;
+}
+.filterbutton input {
+    display: none;
+}
+#filtersection label {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--color2);
+    border-radius: 25px;
+    margin: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#filtersection i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color1);
+    background-color: var(--color3);
+    border-radius: 25px;
+    font-size: 23px;
+    width: 50px;
+    height: 50px;
+    margin: -2px;
+}
+#filtersection span {
+    padding-left: 15px;
+    padding-right: 15px;
 }
