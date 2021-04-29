@@ -26,8 +26,11 @@ header {
 }
 header a {
     text-decoration: none; /*Pour que les liens ne soient plus "souligné"*/
-    padding: 40px 25px 0;
+    padding: 45px 25px 0;
     color:black;
+}
+.navigation a:hover {
+    color: var(--color1);
 }
 .logo {
     margin:25px auto 0px 0px;
@@ -39,11 +42,18 @@ header a {
 .nav-item {
     display: inline-block;
     padding:45px 25px;
-    
+    border-top: 2px solid transparent;
+}
+.nav-item:hover {
+    border-top: 2px solid var(--color1);
 }
 .signin a{
     font-weight: bold;
     color:var(--color1);
+    border-top: 2px solid transparent;
+}
+.signin a:hover {
+    border-top: 2px solid var(--color1);
 }
 .banner p {
     padding: 10px 0;
@@ -70,6 +80,9 @@ header a {
     font-weight: bold;
     font-size: 100%;
     width: 235px;
+}
+input:focus {
+    outline: none;
 }
 .searchbutton {
     background-color: var(--color1);
