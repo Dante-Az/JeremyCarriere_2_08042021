@@ -113,6 +113,19 @@ input:focus {
 .filterbutton input {
     display: none;
 }
+.filterbutton label:hover {
+    background-color: var(--color2);
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+#filtersection input:checked + label {
+    background-color:var(--color3);
+    
+}
+#filtersection input:checked + label i {
+    background-color:var(--color1);
+    color: white;
+}
 #filtersection label {
     display: flex;
     align-items: center;
@@ -128,12 +141,17 @@ input:focus {
     align-items: center;
     color: var(--color1);
     background-color: var(--color3);
+    border: 2px solid transparent;
     border-radius: 25px;
     font-size: 23px;
     width: 50px;
     height: 50px;
     margin: -2px;
 }
+#filtersection label:hover i {
+    border: 2px solid var(--color1);
+}
+
 #filtersection span {
     padding-left: 15px;
     padding-right: 15px;
