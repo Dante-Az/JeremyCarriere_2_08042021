@@ -81,9 +81,6 @@ header a {
     font-size: 100%;
     width: 235px;
 }
-input:focus {
-    outline: none;
-}
 .searchbutton {
     background-color: var(--color1);
     padding: 14px;
