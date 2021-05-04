@@ -10,7 +10,7 @@
 }
 body {
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 /*Mise en page*/
 .main {
@@ -28,6 +28,7 @@ header a {
     text-decoration: none; /*Pour que les liens ne soient plus "souligné"*/
     padding: 45px 25px 0;
     color:black;
+    font-size: 1.2em;
 }
 .navigation a:hover {
     color: var(--color1);
@@ -41,7 +42,7 @@ header a {
 }
 .nav-item {
     display: inline-block;
-    padding:45px 25px;
+    padding:45px 0;
     border-top: 2px solid transparent;
 }
 .nav-item:hover {
@@ -55,6 +56,12 @@ header a {
 .signin a:hover {
     border-top: 2px solid var(--color1);
 }
+h1 {
+    font-size: 1.5em;
+}
+h2 {
+    font-size: 1.6em;
+}
 .banner p {
     padding: 10px 0;
 }
@@ -65,33 +72,35 @@ header a {
 .locationsearch {
     display: flex;
     align-items: center;
-    width: 405px;
+    width: 28%;
     border-radius: 15px;
     overflow: hidden;
 }
 .locationsearch i {
     background-color:var(--color2);
     padding: 16px;
+    height: 48px;
 }
 #sitesearch {
     border: 1px solid var(--color2);
     height: 48px;
     padding-left: 15px;
     font-weight: bold;
-    font-size: 100%;
-    width: 235px;
+    font-size: 1.2em;
+    width: 60%;
 }
 .searchbutton {
     background-color: var(--color1);
     padding: 14px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.3em;
     border: unset;
     height: 48px;
     cursor: pointer;
 }
 .searchbutton span {
     color: white;
+    font-size: 0.9em;
 }
 .searchicon {/*Cacher l'icône en mode desktop*/
     display: none;
@@ -140,7 +149,7 @@ header a {
     background-color: var(--color3);
     border: 2px solid transparent;
     border-radius: 25px;
-    font-size: 23px;
+    font-size: 1.6em;
     width: 50px;
     height: 50px;
     margin: -2px;
@@ -152,6 +161,7 @@ header a {
 #filtersection span {
     padding-left: 15px;
     padding-right: 15px;
+    font-size: 1.2em;
 }
 .info {
     display: flex;
@@ -182,7 +192,7 @@ header a {
     margin:20px 0px 15px 20px;
 }
 h3 {
-    font-size: 1.1rem;
+    font-size: 1.2em;
 }
 .priceinfo {
     padding: 5px 0px;
@@ -231,7 +241,11 @@ figure{
 .showmore {
     display: inline-block;
     font-weight: bold;
-    padding: 20px 0px 10px 20px
+    padding: 20px 0px 10px 20px;
+    font-size: 1.3em;
+}
+.showmore:hover {
+    color: var(--color1);
 }
 /*Section Populaire*/
 .popularhead {
