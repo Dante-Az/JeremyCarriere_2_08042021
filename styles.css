@@ -12,6 +12,10 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
 /*Mise en page*/
 .main {
     margin:auto;
@@ -25,9 +29,7 @@ header {
     align-items: center;
 }
 header a {
-    text-decoration: none; /*Pour que les liens ne soient plus "souligné"*/
     padding: 45px 25px 0;
-    color:black;
     font-size: 1.2em;
 }
 .navigation a:hover {
@@ -203,10 +205,6 @@ h3 {
 .grey-star {
     color: var(--color2);
 }
-.lodging a {
-    text-decoration: none;
-    color: black;
-}
 .lodgingbox{
     display: flex;
     flex-wrap: wrap;
@@ -221,13 +219,12 @@ h3 {
     transform: scale(1.05);
     transition:0.3s;
 }
-
 figure{
     border-radius: 20px;
     margin: 15px 0px;
     padding: 5px;
     background-color: white;
-    box-shadow: 1px 1px 1px rgb(224, 221, 221);
+    box-shadow: 2px 2px 7px rgb(177 177 177 / 40%);
 }
 .lodgingcard figcaption {
     margin-left: 10px;
@@ -294,4 +291,67 @@ figure{
     height: 100%;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
+}
+/*Section Activités*/
+#activitiessection {
+    margin-top: 60px;
+}
+.activitiesbox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height:440px;
+}
+.activitiescard{
+    height: 100%;
+    width: 100%;
+}
+.activitiescard:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.activitiesbox-A {
+    margin-right: 2%;
+    width: 30%;
+}
+.activitiesbox-A:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.activitiesbox-B {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-right: 2%;
+    width: 30%;
+}
+.activitiesbox-B2 {
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.activitiescard img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    height: 100%;
+}
+.activitiesbox figure {
+    padding:0px 0px 50px 0px;
+}
+.imgsize1 {
+    height: 100%;
+}
+.imgsize2 {
+    height: 245px;
+}
+.imgsize3 {
+    height: 165px;
+}
+.imgsize4 {
+    height: 205px;
+}
+.activitiescard h3 {
+    padding: 10px;
 }
