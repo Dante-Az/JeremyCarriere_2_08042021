@@ -15,7 +15,7 @@ body {
 /*Mise en page*/
 .main {
     margin:auto;
-    width:95%
+    max-width: 1340px;
 }
 header {
     display:flex;
@@ -166,4 +166,118 @@ header a {
 }
 .info p {
     margin: 10px;
+}
+/*Section Hébergements*/
+.lodging {
+    display:flex;
+    justify-content: space-around;
+}
+#lodgingsection {
+    background-color: var(--color2);
+    border-radius: 20px;
+    padding: 20px 20px 30px 20px;
+    width: 68%;
+}
+#lodgingsection h2 {
+    margin:20px 0px 15px 20px;
+}
+h3 {
+    font-size: 1.1rem;
+}
+.priceinfo {
+    padding: 5px 0px;
+}
+.blue-star {
+    color: var(--color1);
+}
+.grey-star {
+    color: var(--color2);
+}
+.lodging a {
+    text-decoration: none;
+    color: black;
+}
+.lodgingbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+.lodgingcard {
+    width: 29%;
+    min-width: 200px;
+}
+.lodgingcard:hover {
+    transform: scale(1.05);
+    transition:0.3s;
+}
+
+figure{
+    border-radius: 20px;
+    margin: 15px 0px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 1px 1px 1px rgb(224, 221, 221);
+}
+.lodgingcard figcaption {
+    margin-left: 10px;
+}
+.lodgingcard img {
+    width:100%;
+    height: 115px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.showmore {
+    display: inline-block;
+    font-weight: bold;
+    padding: 20px 0px 10px 20px
+}
+/*Section Populaire*/
+.popularhead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 35px 15px 35px;
+}
+#popularsection {
+    background-color: var(--color2);
+    border-radius: 20px;
+    margin-left: 3%;
+    padding-bottom: 20px;
+    width:29%
+}
+.popularbox {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin:auto;
+    width: 85%;
+}
+.popularcard {
+    display:flex;
+    height:160px;
+}
+.popularcard:hover {
+    transform: scale(1.05);
+    transition:0.3s
+}
+.popularcard figure {
+    display: flex;
+}
+.popularcard figcaption {
+    width: 55%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.poprating {
+    padding-bottom: 10px;
+}
+.popularcard img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
 }
