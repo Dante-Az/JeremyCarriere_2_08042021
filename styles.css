@@ -41,7 +41,7 @@ header a {
     color: var(--color1);
 }
 .logo {
-    margin:25px auto 0px 0px;
+    margin:25px auto 20px 0px;
 }
 ul {
     list-style-type: none; /*Pour retirer les puces des listes*/
