@@ -234,8 +234,8 @@ figure{
     background-color: white;
     box-shadow: 2px 2px 7px rgb(177 177 177 / 40%);
 }
-.lodgingcard figcaption {
-    margin-left: 10px;
+figcaption {
+    padding-left: 5%;
 }
 .lodgingcard img {
     width:100%;
@@ -288,8 +288,7 @@ figure{
     display: flex;
 }
 .popularcard figcaption {
-    width: 55%;
-    margin-left: 5%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -365,7 +364,7 @@ figure{
     height: 205px;
 }
 .activitiescard h3 {
-    padding: 10px 10px 10px 20px;
+    padding: 10px 10px 10px 0;
 }
 /*Footer*/
 .footer {
@@ -397,9 +396,9 @@ figure{
         padding-left: 20px;
     }
 }
-@media screen and (max-width:1057px) {
-    h3 {
-        font-size: 1em ;
+@media screen and (max-width:1189px) {
+    .activitiescard h3 {
+        font-size: 1em;
     }    
     .lodging {
         flex-direction: column-reverse;
@@ -424,13 +423,25 @@ figure{
         display: flex;
         flex-direction: row;
         width: 100%;
+        justify-content: space-around;
     }
     .popularcard {
-        padding: 1%;
         height: auto;
-        width: 33%;
+        width: 29%;
     }
-    .infopopular h3{
-        font-size: 1.3em;
-    }  
+    .popularcard figure {
+        flex-direction: column;
+        width: 100%;
+    }
+    .popularcard figcaption {
+        width: 100%;
+    }
+    .popularcard img {
+        height: 115px;
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+    } 
+    .poprating {
+        padding: 0;
+    }
 }
