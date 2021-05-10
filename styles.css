@@ -82,7 +82,7 @@ h2 {
 .locationsearch {
     display: flex;
     align-items: center;
-    width: 28%;
+    width: 358px;
     border-radius: 15px;
     overflow: hidden;
 }
@@ -97,7 +97,7 @@ h2 {
     padding-left: 15px;
     font-weight: bold;
     font-size: 1.2em;
-    width: 60%;
+    width: 100%;
 }
 .searchbutton {
     background-color: var(--color1);
@@ -388,4 +388,49 @@ figure{
 #footerinfo div {
     width: 30%;
 }
-
+/*Media Queries*/
+@media screen and (max-width:1375px) {
+    .main {
+        margin: 0 20px;
+    }
+    #footerinfo {
+        padding-left: 20px;
+    }
+}
+@media screen and (max-width:1057px) {
+    h3 {
+        font-size: 1em ;
+    }    
+    .lodging {
+        flex-direction: column-reverse;
+    }
+    #lodgingsection {
+        width: 100%;
+        height: 100%;
+    }
+    #lodgingsection h2 {
+        margin-left: auto;
+    }    
+    #popularsection {
+        width: 100%;
+        padding: 20px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .popularhead {
+        padding: 0px 0px 20px;
+    }
+    .popularbox {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .popularcard {
+        padding: 1%;
+        height: auto;
+        width: 33%;
+    }
+    .infopopular h3{
+        font-size: 1.3em;
+    }  
+}
