@@ -445,3 +445,39 @@ figcaption {
         padding: 0;
     }
 }
+@media screen and (max-width:948px) {
+    #filtersection {
+        align-items: baseline;
+    }
+    .filterbutton {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:768px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        }
+    .menu {
+        width: 100%;
+        order: 3;
+    }
+    .navigation {
+        padding: 0;
+        display: flex;
+    }
+    .nav-item {
+        width: 50%;
+        padding: 0px 0px 25px;
+        text-align: center;
+        border-bottom: 3px solid var(--color2);
+    }
+    .nav-item:hover {
+        border-top: none;
+        border-bottom: 3px solid var(--color1);
+    }
+}
+
+    
