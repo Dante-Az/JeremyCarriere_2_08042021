@@ -549,7 +549,7 @@ figcaption {
         border-radius: 20px 0px 0px 20px;
         height: 140px;
     }
-    .priceinfo {
+    .popularcard .priceinfo {
         padding: 10px 0;
     }
     .poprating {
