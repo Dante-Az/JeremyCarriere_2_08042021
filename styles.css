@@ -237,6 +237,7 @@ figure{
 }
 figcaption {
     padding-left: 5%;
+    padding-bottom: 5px;
 }
 .lodgingcard img {
     width:100%;
@@ -293,9 +294,6 @@ figcaption {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-.poprating {
-    padding-bottom: 10px;
 }
 .popularcard img {
     width: 40%;
@@ -564,6 +562,9 @@ figcaption {
     .showmore {
         padding-left: 0;
     }
+    #activitiessection {
+        margin-top: 20px;
+    }
     .activitiesbox {
         height: 100%;
         flex-wrap: wrap;
@@ -598,6 +599,9 @@ figcaption {
     }
 }
 @media screen and (max-width:511px) {
+    .activitiescard h3 {
+        font-size: 0.9em;
+    }
     .lodgingcard {
         width: 100%;
     }
@@ -608,7 +612,7 @@ figcaption {
         height: 180px;
     }
     .popularcard img {
-        width: 35%;
+        width: 40%;
     }
     .popularcard figcaption {
         width: 60%;
