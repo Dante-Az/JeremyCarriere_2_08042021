@@ -45,10 +45,10 @@ header a {
 }
 .logo {
     margin:25px auto 20px 0px;
+    padding: 0;
 }
 ul {
     list-style-type: none; /*Pour retirer les puces des listes*/
-    
 }
 .nav-item {
     display: inline-block;
@@ -118,7 +118,7 @@ h2 {
 /*Mise en forme des filtres*/
 #filtersection {
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 #filtersection h4 {
     margin-right: 10px;
@@ -203,6 +203,7 @@ h2 {
 }
 h3 {
     font-size: 1.2em;
+    padding-top: 5px;
 }
 .priceinfo {
     padding: 5px 0px;
@@ -384,6 +385,9 @@ figcaption {
 #footerinfo li {
     padding: 5px 0;
 }
+#footerinfo li a:hover {
+    font-weight: bold;
+}
 #footerinfo div {
     width: 30%;
 }
@@ -446,27 +450,26 @@ figcaption {
     }
 }
 @media screen and (max-width:948px) {
-    #filtersection {
-        align-items: baseline;
-    }
     .filterbutton {
         flex-wrap: wrap;
     }
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:772px) {
     header {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 20px; 
         }
     .menu {
         width: 100%;
         order: 3;
-    }
+    }   
     .navigation {
         padding: 0;
         display: flex;
+        margin-left: -20px;   
+        margin-right: -20px;
     }
     .nav-item {
         width: 50%;
@@ -478,6 +481,141 @@ figcaption {
         border-top: none;
         border-bottom: 3px solid var(--color1);
     }
+    .signin a {
+        padding-right: 0;
+    }
+    #searchsection {
+        margin-bottom: 20px;
+    }
+    .locationsearch {
+        width: 100%;
+    }
+    .searchtext {
+        display: none;
+    }
+    .searchbutton {
+        margin-left: -10px;
+        border-radius: 15px;
+    }
+    .searchicon {
+        display: inline;
+        padding: 0 2px;
+    }
+    .searchicon i {
+        background-color: var(--color1);
+        padding: 0;
+    }
+    h1 {
+        font-size: 1.9em;
+    }
+    .banner p {
+        font-size: 1.2em;
+    }
+    h4 {
+        padding-left: 15px;
+    }
+    #sitesearch {
+        font-size: 1.4em;
+    }
+    #filtersection {
+        flex-direction: column;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    #lodgingsection {
+        border-radius: 0;
+        background-color: white;
+    }
+    .lodging {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    figure {
+        margin: 10px 0px;
+    }
+    #popularsection {
+    border-radius: 0;
+    }
+    .popularbox {
+        flex-direction: column;
+    }
+    .popularcard figure {
+        flex-direction: row;
+    }
+    .popularcard {
+        width: 100%;
+    }
+    .popularcard img {
+        border-radius: 20px 0px 0px 20px;
+        height: 140px;
+    }
+    .priceinfo {
+        padding: 10px 0;
+    }
+    .poprating {
+        padding-bottom: 10px;
+    }
+    .lodgingbox {
+        justify-content: space-between;
+    }
+    .lodgingcard {
+        width: 47%;
+    }
+    .showmore {
+        padding-left: 0;
+    }
+    .activitiesbox {
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    .activitiesbox-A {
+        width: 100%;
+        margin: 0;
+    }
+    .activitiesbox-B {
+        width: 100%;
+        margin: 0;
+    }
+    .activitiesbox-B2 {
+        width: 100%;
+    }
+    .activitiesbox figure {
+        height: 300px;
+        font-size: 1.4em;
+    }
+    #footerinfo {
+        font-size: 1.2em;
+        flex-direction: column;
+    }
+    #footerinfo div {
+        width: 100%;
+    }
+    #footerinfo li {
+        padding: 10px 0;
+    }
+    #footerinfo ul {
+        padding-bottom: 20px ;
+    }
 }
+@media screen and (max-width:511px) {
+    .lodgingcard {
+        width: 100%;
+    }
+    .lodgingcard figcaption {
+        padding-left: 2%;
+    }
+    .activitiesbox figure {
+        height: 180px;
+    }
+    .popularcard img {
+        width: 35%;
+    }
+    .popularcard figcaption {
+        width: 60%;
+    }
+}
+
+
+
 
     
