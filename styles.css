@@ -76,7 +76,7 @@ h2 {
     padding: 10px 0;
 }
 /*Propriétés de la barre de recherche*/
-#searchsection {
+.searchsection {
     margin: 10px 0;
 }
 .locationsearch {
@@ -116,11 +116,11 @@ h2 {
     display: none;
 }
 /*Mise en forme des filtres*/
-#filtersection {
+.filtersection {
     display: flex;
     align-items: baseline;
 }
-#filtersection h4 {
+.filtersection h4 {
     margin-right: 10px;
 }
 .filterbutton {
@@ -134,15 +134,15 @@ h2 {
     transform: scale(1.05);
     transition: 0.4s;
 }
-#filtersection input:checked + label {
+.filtersection input:checked + label {
     background-color:var(--color3);
     
 }
-#filtersection input:checked + label i {
+.filtersection input:checked + label i {
     background-color:var(--color1);
     color: white;
 }
-#filtersection label {
+.filtersection label {
     display: flex;
     align-items: center;
     border: 2px solid var(--color2);
@@ -151,7 +151,7 @@ h2 {
     font-weight: bold;
     cursor: pointer;
 }
-#filtersection i {
+.filtersection i {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,11 +164,11 @@ h2 {
     height: 50px;
     margin: -2px;
 }
-#filtersection label:hover i {
+.filtersection label:hover i {
     border: 2px solid var(--color1);
 }
 
-#filtersection span {
+.filtersection span {
     padding-left: 15px;
     padding-right: 15px;
     font-size: 1.1em;
@@ -192,13 +192,13 @@ h2 {
     display:flex;
     justify-content: space-around;
 }
-#lodgingsection {
+.lodgingsection {
     background-color: var(--color2);
     border-radius: 20px;
     padding: 20px 20px 30px 20px;
     width: 68%;
 }
-#lodgingsection h2 {
+.lodgingsection h2 {
     margin:20px 0px 15px 20px;
 }
 h3 {
@@ -264,7 +264,7 @@ figcaption {
 .popularhead i {
     font-size: 1.5em;
 }
-#popularsection {
+.popularsection {
     background-color: var(--color2);
     border-radius: 20px;
     margin-left: 3%;
@@ -302,7 +302,7 @@ figcaption {
     border-radius: 20px 0px 0px 20px;
 }
 /*Section Activités*/
-#activitiessection {
+.activitiessection {
     margin: 60px 0 80px;
 }
 .activitiesbox {
@@ -370,23 +370,23 @@ figcaption {
     background-color: var(--color2);
     flex-shrink: 0; /*Pour éviter que le footer devienne plus petit que son contenu*/
 }
-#footerinfo {
+.footerinfo {
     max-width: 1340px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     padding: 35px 0;   
 }
-#footerinfo ul {
+.footerinfo ul {
     padding: 10px 0 ;
 }
-#footerinfo li {
+.footerinfo li {
     padding: 5px 0;
 }
-#footerinfo li a:hover {
+.footerinfo li a:hover {
     font-weight: bold;
 }
-#footerinfo div {
+.footerinfo div {
     width: 30%;
 }
 /*Media Queries*/
@@ -394,7 +394,7 @@ figcaption {
     .main {
         margin: 0 20px;
     }
-    #footerinfo {
+    .footerinfo {
         padding-left: 20px;
     }
 }
@@ -405,14 +405,14 @@ figcaption {
     .lodging {
         flex-direction: column-reverse;
     }
-    #lodgingsection {
+    .lodgingsection {
         width: 100%;
         height: 100%;
     }
-    #lodgingsection h2 {
+    .lodgingsection h2 {
         margin-left: auto;
     }    
-    #popularsection {
+    .popularsection {
         width: 100%;
         padding: 20px;
         margin: auto;
@@ -482,7 +482,7 @@ figcaption {
     .signin a {
         padding-right: 0;
     }
-    #searchsection {
+    .searchsection {
         margin-bottom: 20px;
     }
     .locationsearch {
@@ -515,12 +515,12 @@ figcaption {
     #sitesearch {
         font-size: 1.4em;
     }
-    #filtersection {
+    .filtersection {
         flex-direction: column;
         margin-left: -20px;
         margin-right: -20px;
     }
-    #lodgingsection {
+    .lodgingsection {
         border-radius: 0;
         background-color: white;
     }
@@ -531,7 +531,7 @@ figcaption {
     figure {
         margin: 10px 0px;
     }
-    #popularsection {
+    .popularsection {
     border-radius: 0;
     }
     .popularbox {
@@ -562,7 +562,7 @@ figcaption {
     .showmore {
         padding-left: 0;
     }
-    #activitiessection {
+    .activitiessection {
         margin-top: 20px;
     }
     .activitiesbox {
@@ -584,17 +584,17 @@ figcaption {
         height: 300px;
         font-size: 1.4em;
     }
-    #footerinfo {
+    .footerinfo {
         font-size: 1.2em;
         flex-direction: column;
     }
-    #footerinfo div {
+    .footerinfo div {
         width: 100%;
     }
-    #footerinfo li {
+    .footerinfo li {
         padding: 10px 0;
     }
-    #footerinfo ul {
+    .footerinfo ul {
         padding-bottom: 20px ;
     }
 }
