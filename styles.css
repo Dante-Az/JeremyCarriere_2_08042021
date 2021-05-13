@@ -99,6 +99,9 @@ h2 {
     font-size: 1.2em;
     width: 100%;
 }
+::placeholder {
+    color: black;
+}
 .searchbutton {
     background-color: var(--color1);
     padding: 14px;
@@ -495,7 +498,7 @@ figcaption {
         display: none;
     }
     .searchbutton {
-        margin-left: -10px;
+        margin-left: -15px;
         border-radius: 15px;
     }
     .searchicon {
