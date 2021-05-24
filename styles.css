@@ -608,6 +608,13 @@ figcaption {
     .menu a {
         padding-top: 25px;
     }
+    .filtersection label {
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+    .info {
+        margin-top: 15px;
+    }
     .activitiescard h3 {
         font-size: 0.9em;
     }
